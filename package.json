@@ -1,0 +1,27 @@
+{
+  "name": "lacopa",
+  "version": "1.0.0",
+  "description": "Website la copa te copia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awakeelectronik/laCopa.git"
+  },
+  "keywords": [
+    "cup",
+    "menstrual",
+    "store"
+  ],
+  "author": "awakeelectronik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awakeelectronik/laCopa/issues"
+  },
+  "homepage": "https://github.com/awakeelectronik/laCopa#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
