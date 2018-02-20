@@ -23,5 +23,8 @@
   "homepage": "https://github.com/awakeelectronik/laCopa#readme",
   "dependencies": {
     "bootstrap": "^4.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0-beta.5.2"
   }
 }
