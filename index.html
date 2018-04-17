@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>La Copa te Copia</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-</head>
-<body>
-    <div class="container-fluid">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" media="screen,projection"
+    />
 
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="section" id="navbar">
         <div class="row">
-            <div id="menu" class="col-md-2">
+            <div id="menu" class="col m2 l1 offset-m10">
                 <ul>
                     <li>
-                        <a href="#" class="href">Blog</a>
+                        <a href="#">Blog</a>
                     </li>
                     <li>
-                        <a href="#" class="href">Contacto</a>
+                        <a href="#">Contacto</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
-    
-        <div id="section1" class="row">
-            <div class="col-md-9">
+    </div>
+    <div class="container">
+        <div id="section-one" class="row">
+            <div class="col s12 m9 l6">
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div id="carousel-container" class="col-md-4">
+                    <div class="col m4"></div>
+                    <div id="carousel-container" class="col m4">
                         <div class="ready">
                             <section class="container">
                                 <div id="carousel" style="transform: translateZ(-307px) rotateX(-308.571deg);" class=" ">
@@ -45,33 +49,70 @@
                                     <figure style="opacity: 1; background-color: rgba(0, 255, 254, 0.8); transform: rotateX(180deg) translateZ(307px);">8</figure>
                                 </div>
                             </section>
-                    
+
                             <p id="navigation">
-                                <button id="A" data-position="0">A</button>
-                                <button id="B" data-position="1">B</button>
-                                <button id="C" data-position="2">C</button>
-                                <button id="D" data-position="3">D</button>
-                                <button id="E" data-position="4">E</button>
-                                <button id="F" data-position="5">F</button>
-                                <button id="G" data-position="6">G</button>
-                                <button id="H" data-position="7">H</button>
+                                <button class="questions-carousel" data-position="0">A</button>
+                                <button class="questions-carousel" data-position="1">B</button>
+                                <button class="questions-carousel" data-position="2">C</button>
+                                <button class="questions-carousel" data-position="3">D</button>
+                                <button class="questions-carousel" data-position="4">E</button>
+                                <button class="questions-carousel" data-position="5">F</button>
+                                <button class="questions-carousel" data-position="6">G</button>
+                                <button class="questions-carousel" data-position="7">H</button>
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4"></div>
+                    <div class="col m4"></div>
                 </div>
             </div>
-            <div class="col-md-3" id="video">
+            <div class="col s6 m3 l6" id="video">
                 <div id="video-what">
-                    <iframe width="270" height="215" src="https://www.youtube.com/embed/N-FR-iyfXMY" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                    <!-- <iframe width="270" height="215" src="https://www.youtube.com/embed/N-FR-iyfXMY" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
-        
-    </div>
-    
-  <script src="js/utils.js"></script>
-  <script src="js/carousel.js"></script>
+        <div id="section-two" class="row section">
+            <div class="col s12 m6 l4 cups">
+                <div class="head">
+                    <h1>meLuna</h1>
+                </div>
+                <div id="meluna" class="body">
+                </div>
+            </div>
+            <div class="col s12 m6 l4 cups">
+                <div class="head">
+                    <h1>Yuuki</h1>
+                </div>
+                <div id="yuuki" class="body">
+                </div>
+            </div>
+            <div class="col s12 m12 l4 cups">
+                <div class="head">
+                    <h1>LifeCup</h1>
+                </div>
+                <div id="lifecup" class="body">
+                </div>
+            </div>
+        </div>
+        <div id="section-three" class="row section">
+            <h4>Recibe asesoramiento por los siguientes canales:</h4>
+            <ul id="iconos">
+                <li id="in"></li>
+                <li id="tw"></li>
+                <li id="fb"></li>
+                <li id="wh"></li>
+            </ul>
+        </div>
+        <div id="section4" class="row section">
+        </div>
+        <div id="section5" class="row section">
+
+        </div>
+
+        <script src="js/utils.js"></script>
+        <script src="js/carousel.js"></script>
+        <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 </body>
+
 </html>

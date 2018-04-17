@@ -53,7 +53,7 @@ const numQuestions = 8;
     var init = function () {
       var carousel = new Carousel3D(document.getElementById('carousel')),
         axisButton = document.getElementById('toggle-axis'),
-        navButtons = document.querySelectorAll('#navigation button'),
+        navButtons = document.querySelectorAll('.questions-carousel'),
 
         onNavButtonClick = function (event) {
           var position = parseInt(event.target.getAttribute('data-position'));
