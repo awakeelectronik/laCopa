@@ -14,7 +14,15 @@ $geraldine9 :#FDECEC;
   padding-top: 0;
   
   #menu {
-    border: 1px solid black;
+    
+    ul {
+      margin: 5px;
+      
+      li {
+        float: left;
+        margin: 5px;
+      }
+    }
   }
 }
 
@@ -33,19 +41,17 @@ $geraldine9 :#FDECEC;
     
     #carousel-container{
       .container {
-          width: 210px;
-          height: 140px;
-          position: relative;
-          top: 150px;
-          margin: 0 auto 40px;
-          border: 1px solid #CCC;
-          -webkit-perspective: 1100px;
-          -moz-perspective: 1100px;
-          -o-perspective: 1100px;
-          perspective: 1100px;
-        }
-    
-    
+        width: 210px;
+        height: 140px;
+        position: relative;
+        top: 150px;
+        margin: 0 auto 40px;
+        border: 1px solid #CCC;
+        -webkit-perspective: 1100px;
+        -moz-perspective: 1100px;
+        -o-perspective: 1100px;
+        perspective: 1100px;
+
         #carousel {
           width: 100%;
           height: 100%;
@@ -54,47 +60,71 @@ $geraldine9 :#FDECEC;
           -moz-transform-style: preserve-3d;
           -o-transform-style: preserve-3d;
           transform-style: preserve-3d;
-        }
-    
-        .ready #carousel {
           -webkit-transition: -webkit-transform 1s;
           -moz-transition: -moz-transform 1s;
           -o-transition: -o-transform 1s;
           transition: transform 1s;
+  
+          figure {
+            display: block;
+            position: absolute;
+            width: 186px;
+            height: 116px;
+            left: 10px;
+            top: 10px;
+            border: 2px solid black;
+            line-height: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin: 0;
+            
+            -webkit-transition: opacity 1s, -webkit-transform 1s;
+            -moz-transition: opacity 1s, -moz-transform 1s;
+            -o-transition: opacity 1s, -o-transform 1s;
+            transition: opacity 1s, transform 1s;
+          }
         }
-    
-        #carousel.panels-backface-invisible figure {
-          -webkit-backface-visibility: hidden;
-          -moz-backface-visibility: hidden;
-          -o-backface-visibility: hidden;
-          backface-visibility: hidden;
+      }
+  
+      #carousel.panels-backface-invisible figure {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      #navigation-left, #navigation-right {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        > * {
+          flex: 1 1 auto;
         }
-    
-        #carousel figure {
-          display: block;
-          position: absolute;
-          width: 186px;
-          height: 116px;
-          left: 10px;
-          top: 10px;
-          border: 2px solid black;
-          line-height: 15px;
-          sfont-size: 11px;
-          font-weight: bold;
-          color: white;
-          text-align: center;
+      }
+
+      #navigation-left div {
+        &:nth-child(1) {
+          font-size: 18px;
         }
-    
-        .ready #carousel figure {
-          -webkit-transition: opacity 1s, -webkit-transform 1s;
-          -moz-transition: opacity 1s, -moz-transform 1s;
-          -o-transition: opacity 1s, -o-transform 1s;
-          transition: opacity 1s, transform 1s;
+        &:nth-child(2) {
+          font-size: 29px;
         }
-    
-        figure {
-          margin: 0;
+        &:nth-child(3) {
+          font-size: 20px;
         }
+        &:nth-child(4) {
+          font-size: 17px;
+        }
+        &:nth-child(5) {
+          font-size: 24px;
+        }
+        &:nth-child(6) {
+          font-size: 20px;
+        }
+      }
     }
   }
   &-two {

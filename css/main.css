@@ -1,7 +1,10 @@
 #navbar {
   padding-top: 0; }
-  #navbar #menu {
-    border: 1px solid black; }
+  #navbar #menu ul {
+    margin: 5px; }
+    #navbar #menu ul li {
+      float: left;
+      margin: 5px; }
 
 #section-one {
   height: 400px;
@@ -22,44 +25,59 @@
     -moz-perspective: 1100px;
     -o-perspective: 1100px;
     perspective: 1100px; }
-  #section-one #carousel-container #carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
-  #section-one #carousel-container .ready #carousel {
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s; }
+    #section-one #carousel-container .container #carousel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+      -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+      transition: transform 1s; }
+      #section-one #carousel-container .container #carousel figure {
+        display: block;
+        position: absolute;
+        width: 186px;
+        height: 116px;
+        left: 10px;
+        top: 10px;
+        border: 2px solid black;
+        line-height: 15px;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin: 0;
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        -moz-transition: opacity 1s, -moz-transform 1s;
+        -o-transition: opacity 1s, -o-transform 1s;
+        transition: opacity 1s, transform 1s; }
   #section-one #carousel-container #carousel.panels-backface-invisible figure {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
-  #section-one #carousel-container #carousel figure {
-    display: block;
-    position: absolute;
-    width: 186px;
-    height: 116px;
-    left: 10px;
-    top: 10px;
-    border: 2px solid black;
-    line-height: 15px;
-    sfont-size: 11px;
-    font-weight: bold;
-    color: white;
-    text-align: center; }
-  #section-one #carousel-container .ready #carousel figure {
-    -webkit-transition: opacity 1s, -webkit-transform 1s;
-    -moz-transition: opacity 1s, -moz-transform 1s;
-    -o-transition: opacity 1s, -o-transform 1s;
-    transition: opacity 1s, transform 1s; }
-  #section-one #carousel-container figure {
-    margin: 0; }
+  #section-one #carousel-container #navigation-left, #section-one #carousel-container #navigation-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    #section-one #carousel-container #navigation-left > *, #section-one #carousel-container #navigation-right > * {
+      flex: 1 1 auto; }
+  #section-one #carousel-container #navigation-left div:nth-child(1) {
+    font-size: 18px; }
+  #section-one #carousel-container #navigation-left div:nth-child(2) {
+    font-size: 29px; }
+  #section-one #carousel-container #navigation-left div:nth-child(3) {
+    font-size: 20px; }
+  #section-one #carousel-container #navigation-left div:nth-child(4) {
+    font-size: 17px; }
+  #section-one #carousel-container #navigation-left div:nth-child(5) {
+    font-size: 24px; }
+  #section-one #carousel-container #navigation-left div:nth-child(6) {
+    font-size: 20px; }
 #section-two .cups {
   height: 300px;
   border: 1px solid black; }
