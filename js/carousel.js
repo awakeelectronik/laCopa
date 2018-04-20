@@ -1,4 +1,4 @@
-const numQuestions = 11;
+const numQuestions = 13;
     var transformProp = Modernizr.prefixed('transform');
 
     function Carousel3D(el) {
