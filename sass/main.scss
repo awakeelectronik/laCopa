@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+
+
 $geraldine: #E57373;
 $geraldine1 :#F58F8D;
 $geraldine2 :#F7A5A4;
@@ -8,6 +12,10 @@ $geraldine6 :#FCDADA;
 $geraldine7 :#FDE1E1;
 $geraldine8 :#FDE7E7;
 $geraldine9 :#FDECEC;
+
+* {
+    font-family: 'Tajawal', sans-serif;
+}
 
 
 #navbar {
@@ -29,7 +37,6 @@ $geraldine9 :#FDECEC;
 #section {
   &-one {
     height: 400px;
-    border: 1px solid black;
 
     #video-what{
         position: relative;
