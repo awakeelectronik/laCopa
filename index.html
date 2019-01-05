@@ -8,10 +8,12 @@
     <title>La Copa te Copia</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" media="screen,projection"
-    />
-
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="js/touchslider.js"></script>
 </head>
 
 <body>
@@ -82,29 +84,182 @@
             </div> -->
         </div>
 
-        <div id="section-two" class="row section">
-            <div class="col s12 m6 l4 cups">
-                <div class="head">
-                    <h1>meLuna</h1>
+        <div  id="section-two">
+            <!-- CUPS BEGIN -->
+            <div class="row">
+                <div class="col m1">
+                    <i onclick="t1.prev();" class="material-icons lateral">
+                        chevron_left
+                    </i>
+                    <i onclick="t1.pause();" class="material-icons play-stop">
+                        pause
+                    </i>
+                    <i onclick="t1.play();" class="material-icons play-stop play">
+                        play_arrow
+                    </i>
                 </div>
-                <div id="meluna" class="body">
+                <div class="col m10">
+                    <div id='slider'>
+                        <div class="cups" style='display:block'> 
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>meLuna</h1>
+                                </div>
+                                <div id="meluna" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+    
+                                <div class="head">
+                                    <h1>LifeCup</h1>
+                                </div>
+                                <div id="lifecup" class="body">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="t1.next();" id="icon-right" class="col m1">
+                    <i class="material-icons lateral">
+                        chevron_right
+                    </i>
                 </div>
             </div>
-            <div class="col s12 m6 l4 cups">
-                <div class="head">
-                    <h1>Yuuki</h1>
+            <div id="pagenavi">
+            </div>
+            <!-- CUPS END -->
+            
+            <!-- OTHERS BEGIN -->
+            <div class="row">
+                <div class="col m1">
+                    <i onclick="t2.prev();" class="material-icons lateral">
+                        chevron_left
+                    </i>
+                    <i onclick="t2.pause();" class="material-icons play-stop">
+                        pause
+                    </i>
+                    <i onclick="t2.play();" class="material-icons play-stop play">
+                        play_arrow
+                    </i>
                 </div>
-                <div id="yuuki" class="body">
+                <div class="col m10">
+                    <div id='slider2'>
+                        <div class="cups" style='display:block'> 
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>meLuna</h1>
+                                </div>
+                                <div id="meluna" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>Yuuki</h1>
+                                </div>
+                                <div id="yuuki" class="body">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cups">
+                            <a href="google.com" target="_blank">
+
+                                <div class="head">
+                                    <h1>LifeCup</h1>
+                                </div>
+                                <div id="lifecup" class="body">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="t2.next();" id="icon-right" class="col m1">
+                    <i class="material-icons lateral">
+                        chevron_right
+                    </i>
                 </div>
             </div>
-            <div class="col s12 m12 l4 cups">
-                <div class="head">
-                    <h1>LifeCup</h1>
-                </div>
-                <div id="lifecup" class="body">
-                </div>
+            <div id="pagenavi2">
             </div>
+            <!-- OTHERS END -->
         </div>
+        
         <div id="section-three" class="row section">
             <h4>Recibe asesoramiento por los siguientes canales:</h4>
             <ul id="iconos">
@@ -119,10 +274,43 @@
         <div id="section5" class="row section">
 
         </div>
-
-        <script src="js/utils.js"></script>
-        <script src="js/carousel.js"></script>
-        <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    </div>
+    <!-- Ruleta -->
+    <script src="js/utils.js"></script>
+    
+    <script src="js/carousel.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    
+    
+    <script type="text/javascript">
+        console = window.console || { dir: new Function(), log: new Function() };
+        var as = document.getElementById('pagenavi').getElementsByTagName('a');
+        for (var i = 0; i < as.length; i++) {
+            (function () {
+                var j = i;
+                as[i].onclick = function () {
+                    t4.slide(j);
+                    return false;
+                }
+            })();
+        }
+        var a = document.getElementById('pagenavi2').getElementsByTagName('a');
+        for (var i = 0; i < a.length; i++) {
+            (function () {
+                var j = i;
+                a[i].onclick = function () {
+                    t4.slide(j);
+                    return false;
+                }
+            })();
+        }
+        var t1 = new TouchSlider('slider', { duration: 800, interval: 5000, direction: 0, autoplay: true, align: 'left', mousewheel: false, mouse: true, fullsize: false });
+        var t2 = new TouchSlider('slider2', { duration: 1000, interval: 6000, direction: 0, autoplay: true, align: 'left', mousewheel: false, mouse: true, fullsize: false });
+        // t4.on('before', function (m, n) {
+        //     as[m].className = '';
+        //     as[n].className = 'active';
+        // })
+    </script>
 </body>
 
 </html>

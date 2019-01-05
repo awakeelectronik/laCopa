@@ -9,6 +9,21 @@ $geraldine7 :#FDE1E1;
 $geraldine8 :#FDE7E7;
 $geraldine9 :#FDECEC;
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    transform: rotate(0deg);
+  }
+  
+  40%{
+    transform: translate3d(2px, 0, 0)
+  }
+
+  60% {
+    transform: translate3d(-4px, 0, 0);
+    transform: rotate(-5deg);
+  }
+}
 
 #navbar {
   padding-top: 0;
@@ -44,6 +59,12 @@ $geraldine9 :#FDECEC;
       @media only screen and (max-width: 600px) {
         #div-container {
           height: 450px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        #div-container {
+          margin-top: -3em;
         }
       }
       
@@ -109,6 +130,8 @@ $geraldine9 :#FDECEC;
 
         > * {
           flex: 1 1 auto;
+          cursor: pointer;
+
 
           @media only screen and (max-width: 500px) {
             font-size: 15px !important;
@@ -117,24 +140,33 @@ $geraldine9 :#FDECEC;
       }
 
       #navigation-left div {
+        /* to proof */
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Comfortaa', cursive;
+
+        font-family: 'Indie Flower', cursive;
+        align-self: center;
+        margin: 0 0.21em;
+        text-align: center;
+
         &:nth-child(1) {
-          font-size: 18px;
+          font-size: 58px;
           color: #ffc400;
         }
         &:nth-child(2) {
-          font-size: 29px;
+          font-size: 32px;
           color: #810099;
         }
         &:nth-child(3) {
-          font-size: 20px;
+          font-size: 47px;
           color: #ff9400;
         }
         &:nth-child(4) {
-          font-size: 17px;
+          font-size: 25px;
           color: #00cc17;
         }
         &:nth-child(5) {
-          font-size: 24px;
+          font-size: 38px;
           color: #3a33ff;
         }
         &:nth-child(6) {
@@ -144,7 +176,6 @@ $geraldine9 :#FDECEC;
         &:nth-child(7) {
           font-size: 21px;
           line-height: 19px;
-          text-align: center;
           color: #b56969;
         }
         &:nth-child(8) {
@@ -152,11 +183,11 @@ $geraldine9 :#FDECEC;
           color: #dbe9d8;
         }
         &:nth-child(9) {
-          font-size: 22px;
+          font-size: 25px;
           color: #cdd422;
         }
         &:nth-child(10) {
-          font-size: 16px;
+          font-size: 28px;
           color: #a08b54;
         }
         &:nth-child(11) {
@@ -164,20 +195,90 @@ $geraldine9 :#FDECEC;
           color: #677077;
         }
         &:nth-child(12) {
-          font-size: 13px;
+          font-size: 24px;
           color: #9900ff;
         }
         &:nth-child(13) {
-          font-size: 26px;
+          font-size: 60px;
           color: #e05915;
+        }
+
+        transition: font-size .4s ease-in-out;        
+
+        // -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+        transition: 0.5s;
+        // -webkit-transition-delay: 1s; /* Safari */
+        // transition-delay: 1s;
+        // transition-duration: 1000ms;
+        // animation-duration: 2000ms;
+        &:hover {
+          animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          // font-weight: 800;
+          // font-size: 200%
+          // text-shadow: 0px 0px 10px #50505082;
         }
       }
     }
   }
   &-two {
+    overflow: hidden;
+    clear: both;
+
+    i.material-icons.lateral {
+      position: relative;
+      top: 100px;
+      font-size: 90px;
+      z-index: 3;
+      box-shadow: 1px 1px 1px;
+      border-radius: 42px;
+      cursor: pointer;
+      color: $geraldine;
+      background: #ffffff91;
+    }
+    
+    @media only screen and (max-width: 361px) {
+      i.material-icons.lateral {
+        top: 50px;
+        font-size: 40px;
+      }
+      i.material-icons.play-stop, #icon-right {
+        display: none
+      }
+    }
+    i.material-icons.play-stop {
+      z-index: 3;
+      cursor: pointer;
+      color: $geraldine1;
+      position: relative;
+      top: -3em;
+      left: 19em;
+      font-size: 30px;  
+
+      &:focus, &:active, &:visited, &:focus-within {
+        background-color: #2ab7a9;
+      }
+      &.play {
+        left: 22em;
+      }
+      
+    }
+    #icon-right {
+      text-align: right;
+    }
+    #slider {
+      width: 3000px;
+    }
+
     .cups {
       height: 300px;
+      width: 450px;
       border: 1px solid black;
+      
+      @media only screen and (max-width: 361px) {
+        height: 270px;
+        width: 330px;
+      }
+      
   
       .body {
         background-size: cover;
@@ -185,7 +286,7 @@ $geraldine9 :#FDECEC;
         background-repeat: no-repeat;
   
         &#lifecup {
-          background-image: url("http://lifecup.co/wp-content/uploads/2016/11/Redes.jpg");
+          background-image: url("https://www.catorce6.com/directorio-ambiental/images/stories/virtuemart/product/kFHs0cyVHe10.jpg");
         }
         &#yuuki {
           background-image: url("https://menstrualcupreviews.net/reviews/yuuki/yuuki3.jpg");
@@ -197,6 +298,15 @@ $geraldine9 :#FDECEC;
         
       }
     } 
+    .swipe.col.m10 {
+      max-width: 100%;
+      min-width: 100%;
+      
+      @media only screen and (max-width: 1024px) {
+        overflow: hidden;
+      }
+    }
+    
   }
   &-three {
     margin: 20px;
@@ -219,6 +329,10 @@ $geraldine9 :#FDECEC;
         background-size: 240px;
         background-image: url("https://image.freepik.com/vector-gratis/coleccion-de-logotipos-modernos-de-redes-sociales-de-acuarela_1361-346.jpg");
         background-position-y: -103px;
+        
+        @media only screen and (max-width: 640px) {
+          background-position-y: -45px;
+        }
 
         &:hover {
           background-position-y: -45px;
@@ -242,5 +356,14 @@ $geraldine9 :#FDECEC;
 
 
 body {
-    margin: 0
+    margin: 0;
+    overflow-x: hidden
+}
+
+
+/* CUSTOMS */
+
+.container {
+  max-width: 1880px;
+  width: 95%;
 }
