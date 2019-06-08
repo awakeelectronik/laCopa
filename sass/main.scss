@@ -1,3 +1,18 @@
+@font-face { 
+  font-family: "pumpkin"; 
+  src: url('../fonts/Pumpkin Pie Lattes.ttf'); 
+} 
+@font-face { 
+  font-family: "LemonYellowSun"; 
+  src: url('../fonts/tipografiaLemonYellowSun.otf'); 
+} 
+@font-face { 
+  font-family: "bombing"; 
+  src: url('../fonts/Bombing.ttf'); 
+} 
+
+
+$geraldine0 :#f5818191;
 $geraldine: #E57373;
 $geraldine1 :#F58F8D;
 $geraldine2 :#F7A5A4;
@@ -25,6 +40,14 @@ $geraldine9 :#FDECEC;
   }
 }
 
+* {
+  font-family: "pumpkin"; 
+}
+
+.bombing {
+  font-family: "bombing"
+}
+
 #navbar {
   padding-top: 0;
   
@@ -36,15 +59,18 @@ $geraldine9 :#FDECEC;
       li {
         float: left;
         margin: 5px;
+
+        u {
+          font-family: monospace;
+          font-size: 13px;
+        }
       }
     }
   }
 }
 
-#section {
-  &-questions {
-    height: 400px;
-
+#section- {
+  &questions {
     #video-what{
         position: relative;
         bottom: 0;
@@ -127,12 +153,10 @@ $geraldine9 :#FDECEC;
       #navigation-left, #navigation-right {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
 
         > * {
           flex: 1 1 auto;
           cursor: pointer;
-
 
           @media only screen and (max-width: 500px) {
             font-size: 15px !important;
@@ -144,64 +168,88 @@ $geraldine9 :#FDECEC;
         /* to proof */
         font-family: 'Quicksand', sans-serif;
         font-family: 'Comfortaa', cursive;
-
         font-family: 'Indie Flower', cursive;
+        font-family: "LemonYellowSun";
+
+
         align-self: center;
         margin: 0 0.21em;
         text-align: center;
 
         &:nth-child(1) {
-          font-size: 58px;
+          font-size: 87px;
           color: #ffc400;
         }
         &:nth-child(2) {
-          font-size: 32px;
+          font-size: 48px;
           color: #810099;
+          align-self: flex-start;
         }
         &:nth-child(3) {
-          font-size: 47px;
+          font-size: 70px;
           color: #ff9400;
+          align-self: flex-end;
         }
         &:nth-child(4) {
-          font-size: 25px;
+          font-size: 37px;
           color: #00cc17;
+          align-self: flex-start;
         }
         &:nth-child(5) {
-          font-size: 38px;
+          font-size: 57px;
           color: #3a33ff;
         }
         &:nth-child(6) {
-          font-size: 20px;
+          font-size: 30px;
           color: #3fb0ac;
         }
         &:nth-child(7) {
-          font-size: 21px;
-          line-height: 19px;
+          font-size: 31px;
+          line-height: 30px;
           color: #b56969;
         }
         &:nth-child(8) {
-          font-size: 26px;
+          font-size: 39px;
           color: #dbe9d8;
         }
         &:nth-child(9) {
-          font-size: 25px;
+          font-size: 37px;
           color: #cdd422;
         }
         &:nth-child(10) {
-          font-size: 28px;
+          font-size: 42px;
           color: #a08b54;
         }
         &:nth-child(11) {
-          font-size: 19px;
+          font-size: 29px;
           color: #677077;
         }
         &:nth-child(12) {
-          font-size: 24px;
+          font-size: 36px;
           color: #9900ff;
+          align-self: flex-start;
         }
         &:nth-child(13) {
-          font-size: 60px;
+          font-size: 90px;
           color: #e05915;
+
+          ul {
+            background: #ffffff9c;
+            height: 80%;
+            li {
+              a {
+                width: 80px;
+                height: 80px;
+                background: none !important;
+                box-shadow: none;
+              }
+              width: 80px;
+              height: 80px;
+              img {
+                width: 80px;
+              }
+            }
+          }
         }
 
         transition: font-size .4s ease-in-out;        
@@ -221,7 +269,7 @@ $geraldine9 :#FDECEC;
       }
     }
   }
-  &-products {
+  &products {
     overflow: hidden;
     clear: both;
 
@@ -272,30 +320,44 @@ $geraldine9 :#FDECEC;
 
     .cups {
       height: 300px;
-      width: 450px;
+      width: 225px;
       
       @media only screen and (max-width: 361px) {
         height: 270px;
         width: 330px;
       }
-      
-  
+      .head {
+        h1 {
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+      .neck {
+        font-size: 50px;
+        color: #3c56d6;
+        margin: -15px 15px 0;
+      } 
       .body {
-        background-size: cover;
-        height: 50%;
+        background-size: contain;
         background-repeat: no-repeat;
+        height: 50%;
   
         &#lifecup {
-          background-image: url("https://www.catorce6.com/directorio-ambiental/images/stories/virtuemart/product/kFHs0cyVHe10.jpg");
+          background-image: url("../img/lifecup-rosa.jpg");
         }
         &#yuuki {
-          background-image: url("https://menstrualcupreviews.net/reviews/yuuki/yuuki3.jpg");
+          background-image: url("../img/yuuki-arcoiris.jpg");
         }
         &#meluna {
-          background-image: url("https://menstrualcupreviews.net/reviews/meluna/meluna_main.jpg");
+          background-image: url("../img/meLuna-morada.jpg");
         }
-  
         
+      }
+      
+      &:hover {
+        .body {
+          filter: hue-rotate(180deg) saturate(2);
+        }
       }
     } 
     .swipe.col.m10 {
@@ -308,7 +370,7 @@ $geraldine9 :#FDECEC;
     }
     
   }
-  &-networks {
+  &networks {
     margin: 20px;
     text-align: center;
 
@@ -351,7 +413,7 @@ $geraldine9 :#FDECEC;
       }
     }
   }
-  &-collage {
+  &collage {
     height: 500px;
 
     > div {
@@ -418,14 +480,93 @@ $geraldine9 :#FDECEC;
       position: relative;
     }
   }
-  &-videos {
+  &videos {
     .col.m4 {
       display: flex;
       justify-content: center;
     }
   }
+  &payment {
+    background-image: url(../img/sticker.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position-y: bottom;
+    @media only screen and (min-width: 1919px) {
+      background-position-y: -175px;
+    }
+    
+    .bombing {    
+      color: white;
+
+      &.methods {
+        font-size: 75px;
+        margin: 0.6em 0 0 0.3em;
+      }
+      &.gather {
+        font-size: 45px;
+        margin: 0;
+        text-shadow: 0px 1px black;
+      }
+    }
+    #icons-bank {
+      background: #ffffff52;
+      border-radius: 20px;
+      padding: 8px;
+      display: inline-block;
+
+      img {
+        padding: 5px;
+        cursor: pointer;
+      } 
+    }
+    #free-shipping {
+      text-align: right;
+      img:nth-last-child(1) {
+        margin-right: 2em;
+      }
+    }
+  }
+  &why-us {
+    background: #ffe076;
+    color: #16265d;
+    padding: 2em;
+    margin: 0;
+    border-bottom: 10px solid orange;
+    
+    >p:first-child {
+      font-size: 7em;
+      margin: 0;
+      text-align: center;
+      line-height: 1em;
+    }
+    #content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .we-want {
+        display: flex;
+        p {
+          font-size: 20px;
+          text-align: center;
+          line-height: 30px;
+          font-family: LemonYellowSun;
+          b {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
 }
 
+#wave {
+  width: 100%;
+  height: 24px;
+  background: url(../img/wave.png);
+  position: relative;
+  bottom: -24px;
+}
 
 body {
     margin: 0;
@@ -436,6 +577,6 @@ body {
 /* CUSTOMS */
 
 .container {
-  max-width: 1880px;
-  width: 95%;
+  max-width: 1920px;
+  width: 100%;
 }

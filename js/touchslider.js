@@ -637,8 +637,6 @@
             var type=this.direction?'Top':'Left',
                 myWidth=this.getOuterSize(this.pages[index],true),
                 sum=this.getSum(0,index)+this['getMargin'+type+'Size'](this.container)+this['getBorder'+type+'Size'](this.container);
-
-                console.log( "probando", sum);
             switch(this.align){
                 case 'top':
                 case 'left':

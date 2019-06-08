@@ -1,0 +1,28 @@
+
+#navbar {
+    padding-top: 0;
+    
+    #menu {
+      
+      ul {
+        margin: 5px;
+        
+        li {
+          float: left;
+          margin: 5px;
+  
+          u {
+            font-family: monospace;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+}
+
+img {
+    width: 100%;
+}
+.col, .row {
+    border: 1px solid black
+}

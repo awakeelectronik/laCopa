@@ -57,7 +57,6 @@ const numQuestions = 13;
 
         onNavButtonClick = function (event) {
           var position = parseInt(event.target.getAttribute('data-position'));
-          console.log(position)
           carousel.rotation = carousel.theta * position;
           carousel.transform();
         };
