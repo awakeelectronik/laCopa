@@ -8,6 +8,7 @@
     
     <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" media="screen,projection">
     <link rel="stylesheet" href="css/catalog.css">
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>   
 </head>
 <body>
     <div class="section" id="navbar">
@@ -25,29 +26,244 @@
             </div>
         </div>
     </div>
-    <div class="container" style="border: 1px solid black; height: 1000px">
+    <div class="container">
         <div class="row">
-            <div class="col m6">
+            <div class="input-field col s12 m12 l12 xl12">
+                <select>
+                    <optgroup label="Meluna">
+                        <option value="1">Soft</option>
+                        <option value="2">Classic</option>
+                        <option value="3">Sport</option>
+                    </optgroup>
+                    <optgroup label="Yuuki">
+                        <option value="3">Classic</option>
+                        <option value="4">Rainbow</option>
+                    </optgroup>
+                </select>
+                <label>Otras marcas disponibles</label>
+            </div>
+        </div>
+        <div class="row">
+            <div id="left" class="col m6">
+                <div class="row" id="title-mobile">
+                    <h1>MELUNA CLASSIC</h1>
+                </div>
                 <div class="row">
                     <img src="img/meLuna-morada.jpg" alt="">
                 </div>
-                <div class="row">
-                    <h2>Otras tallas</h2>
+                <div class="row" id="price-origin">
+                    <h3>$72.000</h3>
+                    <h4>Alemania</h4>
                 </div>
                 <div class="row">
-                    <div class="col m4">
+                    <p id="description">
+                        <b>Material</b>: TPE de grado médico hipoalergénico.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col m4 s4">
+                        <h4>SOFT (suave)</h4>
                         <img src="img/meLuna-morada.jpg" alt="">
+                        <p>Plateado escarchado, rosa y azul aguamarina.</p>
                     </div>
-                    <div class="col m4">
+                    <div class="col m4 s4">
+                        <h4>SOFT (suave)</h4>
                         <img src="img/meLuna-morada.jpg" alt="">
+                        <p>Plateado escarchado, rosa y azul aguamarina.</p>
                     </div>
-                    <div class="col m4">
+                    <div class="col m4 s4">
+                        <h4>SOFT (suave)</h4>
                         <img src="img/meLuna-morada.jpg" alt="">
+                        <p>Plateado escarchado, rosa y azul aguamarina.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="img/certificates.jpg" alt="">
+                </div>
+            </div>
+            <div class="col m6">
+                <div class="row" id="title">
+                    <h1>MELUNA CLASSIC</h1>
+                </div>
+                <div class="row">
+                    <h3>$72.000</h3>
+                    <h4>Alemania</h4>
+                </div>
+                <div class="row" id="sizes">
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>S</p>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>M</p>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>L</p>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p class="xl">XL</p>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>S</p>
+                                    <span>Shorty</span>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>M</p> 
+                                    <span>Shorty</span>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p>L</p>
+                                    <span>Shorty</span>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <div class="row">
+                            <div class="col m4 s2">
+                                <div id="size">
+                                    <p class="xl">XL</p> 
+                                    <span>Shorty</span>
+                                </div>
+                            </div>
+                            <div class="col m8 s10">
+                                <div class="large">
+                                    <p><b>45mm</b> Diámetro</p>
+                                    <p><b>38mm</b> Longitud</p>
+                                    <p><b>23ml</b> Capacidad</p>
+                                    <p><b>10mm</b> Longitud de tallo</p>
+                                </div>
+                                <div class="small">
+                                    <p><b>45mm</b> x <b>38mm</b> x <b>23mm</b></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, {});
+        });
+
+    </script>
 </body>
 </html>
