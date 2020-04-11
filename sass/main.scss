@@ -232,13 +232,16 @@ $geraldine9 :#FDECEC;
         &:nth-child(13) {
           font-size: 90px;
           color: #e05915;
-
+          margin-top: 18px;
+          
           ul {
-            background: #ffffff9c;
+            display: flex;
+            justify-content: space-around;
             height: 80%;
+
             li {
               a {
-                width: 80px;
+                width: 130px;
                 height: 80px;
                 background: none !important;
                 box-shadow: none;
@@ -247,6 +250,7 @@ $geraldine9 :#FDECEC;
               height: 80px;
               img {
                 width: 80px;
+                background-color: #00000026;
               }
             }
           }
@@ -480,6 +484,11 @@ $geraldine9 :#FDECEC;
       position: relative;
     }
   }
+  &networks {
+    h4 {
+      font-weight: bold;
+    }
+  }
   &videos {
     .col.m4 {
       display: flex;
@@ -487,6 +496,7 @@ $geraldine9 :#FDECEC;
     }
   }
   &payment {
+    position: relative;
     background-image: url(../img/sticker.jpg);
     background-size: cover;
     height: 400px;
@@ -505,7 +515,8 @@ $geraldine9 :#FDECEC;
       &.gather {
         font-size: 45px;
         margin: 0;
-        text-shadow: 0px 1px black;
+        //text-shadow: 0px 1px black;
+        text-shadow: 3px 2px 19px #4c4c4c;
       }
     }
     #icons-bank {
@@ -521,8 +532,20 @@ $geraldine9 :#FDECEC;
     }
     #free-shipping {
       text-align: right;
-      img:nth-last-child(1) {
-        margin-right: 2em;
+      img {
+        margin: 50px 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        animation-name: free-shippping;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+      }
+      
+      @keyframes free-shippping {
+        0%   {right: 0px;}
+        100% {right: 1000px;}
       }
     }
   }
@@ -572,11 +595,68 @@ body {
     margin: 0;
     overflow-x: hidden
 }
+#curtain-video {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #000000b8;
+  z-index: 122;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease-in-out;
 
+  > div {
+    position: relative;    
+    padding: 68px;
+  
+    
+    #orangeBox {
+      background: #f90;
+      color: #fff;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      width: 15px;
+      height: 40px;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: scale(3,1);
+      cursor: pointer;
+
+      span {
+        font-family: "LemonYellowSun";
+        line-height: 0px;
+      }
+    }
+    iframe {
+    }
+  }
+}
 
 /* CUSTOMS */
 
 .container {
-  max-width: 1920px;
+  max-width: 1920px; 
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+/* CORRECTION MATERIALIZE */ 
+
+@import "materialize-fix";
